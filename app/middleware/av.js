@@ -1,4 +1,4 @@
-var koa = require('koa');
+'use strict';
 var AV = require('leanengine');
 
 AV.init({
@@ -7,6 +7,6 @@ AV.init({
   masterKey: process.env.LEANCLOUD_APP_MASTER_KEY || '9tsHO2sGropCJHN7C7zW5yRH'
 });
 
-var app = koa();
-app.use(AV.koa());
-app.listen(process.env.LEANCLOUD_APP_PORT);
+module.exports = function () {
+  return AV.koa();
+};

@@ -1,0 +1,26 @@
+{
+  "name": "moonbay",
+  "version": "1.0.0",
+  "description": "moonbay",
+  "main": "index.js",
+  "scripts": {
+        "start": "node server.js"
+    },
+    "engines": {
+        "node": "4.x"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hustxiaoc/moonbay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hustxiaoc/moonbay/issues"
+  },
+  "homepage": "https://github.com/hustxiaoc/moonbay#readme",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "leanengine": "^1.2.3"
+  }
+}

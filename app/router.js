@@ -1,4 +1,5 @@
 'use strict';
+const AV = require('leanengine');
 const componentQuery = new AV.Query('Component');
 
 module.exports = app => {

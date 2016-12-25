@@ -1,5 +1,5 @@
 'use strict';
-var AV = require('leanengine');
+const AV = require('leanengine');
 
 AV.init({
   appId: process.env.LEANCLOUD_APP_ID || 'XSlTuCoI24N4ikmUyGnbbVL3-gzGzoHsz',

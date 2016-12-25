@@ -1,6 +1,11 @@
 'use strict';
+const componentQuery = new AV.Query('Component');
 
 module.exports = app => {
+  app.get('/api/components', function*() {
+      this.body = yield componentQuery.find();
+  });
+
   app.get('/home', app.controller.home);
 
   app.redirect('/', '/news');
